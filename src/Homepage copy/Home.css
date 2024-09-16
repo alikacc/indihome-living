@@ -1,0 +1,778 @@
+/* Body.css */
+.combined-component {
+    width: 100%;
+    height: 100vh;
+    background-color: #719ad9;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.body-com {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 90px;
+
+}
+
+/* Header */
+.whole-header {
+    position: absolute;
+    width: 100%;
+    height: 369px;
+    left: 0px;
+    top: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.details-link {
+    color: #ED0226;
+    /* Updated to match the design */
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    left: 16px;
+    top: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.text2 {
+    position: absolute;
+    width: auto;
+    height: 28px;
+    left: 16px;
+    top: 38px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.question-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 280px;
+    top: 28px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.notification-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 320px;
+    top: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+/* Floating Box */
+
+.floatingbox {
+    /* Frame 1321314638 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+
+    position: absolute;
+    width: 328px;
+    height: 134px;
+    left: calc(50% - 328px/2 - 0.5px);
+    top: 0px;
+
+    background: #FFFFFF;
+    /* Elevation/small/shadow-default */
+    box-shadow: 0px 2px 4px 1px rgba(157, 156, 182, 0.2);
+    border-radius: 16px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.floatingbox-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px;
+    gap: 8px;
+
+    width: 100%;
+    height: 38px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    background-color: rgb(171, 171, 171);
+    order: 0;
+    flex-grow: 0;
+
+
+
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.location-select {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* Space between icon and text */
+    cursor: pointer;
+    padding: 8px 12px;
+    /* Adjust padding for clickable area */
+    background-color: transparent;
+    /* Make sure background is transparent */
+}
+
+.box-title {
+    /* System/Small/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    color: #757F90;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.top-button-icon {
+    /* System / ico_location */
+
+    width: 24px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.location-dropdown {
+    position: absolute;
+    top: 60px;
+    /* Adjust position based on the parent element */
+    left: 16px;
+    width: auto;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.location-dropdown.active {
+    display: block;
+}
+
+.location-item {
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.location-item:hover {
+    background-color: #f0f0f0;
+}
+
+.floatingbox-bottom {
+    /* card_smartcard */
+
+    /* Auto layout */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+
+    width: 296px;
+    height: 40px;
+
+    /* Blur/Default */
+    backdrop-filter: blur(12px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+
+
+
+
+.header-tabs {
+    position: absolute;
+    width: 100%;
+    height: 775px;
+    left: 0px;
+    top: 50px;
+
+    background: #DAE0E9;
+    border-radius: 16px;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+.background-box {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+
+    background: #EFF1F4B2;
+    z-index: 1;
+    border-radius: 16px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+
+.navigation-tab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* Ensures even spacing */
+    padding: 0 16px;
+    gap: 24px;
+    margin-bottom: 16px;
+    width: 100%;
+    /* Takes full width */
+    height: 33px;
+    overflow-x: auto;
+    z-index: 3;
+}
+
+/* Styling for each label tab */
+.label-tab {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: auto;
+    height: 33px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9E9E9E;
+    /* Dimmed by default */
+    cursor: pointer;
+}
+
+/* Active label tab (when clicked) */
+.label-tab.active {
+    color: #000000;
+    /* Turns black when active */
+}
+
+/* Inactive (non-active) tabs */
+.label-tab:not(.active) {
+    color: #9E9E9E;
+    /* Dimmed gray color when not active */
+}
+
+.device-card-collection-vertical {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    left: 16px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.device-card {
+    width: 100%;
+    max-width: 328px;
+    height: 164px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    /* Added to position title and subtitle correctly */
+}
+
+.device-card-collection-horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    /* Adjust alignment if necessary */
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    gap: 16px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.device-card-horizontal {
+    width: calc(50% - 8px);
+    /* Adjust width to fit three cards per row with gap */
+    max-width: none;
+    /* Override max-width */
+    height: 164px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    /* Added to position title and subtitle correctly */
+}
+
+.device-card-horizontal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Ensure the image has the same border-radius */
+}
+
+.device-card-title {
+    position: absolute;
+    /* Changed to absolute to be inside the card */
+    left: 12px;
+    bottom: 36px;
+    /* Adjusted to position above the subtitle */
+    z-index: 1;
+    /* Ensure it appears on top of the image */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.device-card-sub {
+    position: absolute;
+    /* Changed to absolute to be inside the card */
+    left: 12px;
+    bottom: 12px;
+    /* Adjusted to position at the bottom */
+    z-index: 1;
+    /* Ensure it appears on top of the image */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.device-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* Ensure it covers the entire card */
+    top: 0;
+    left: 0;
+    z-index: 0;
+    /* Ensure it appears behind the title and subtitle */
+}
+
+/* Toggle Button */
+
+.toggle-button {
+    margin: 16px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.no-device-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 16px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 200px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.no-device-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.no-device-frame {
+    /* Frame 1000001090 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 328px;
+    height: 78px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Frame 1000001090 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: auto;
+    height: 78px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.no-device-message {
+    /* Belum Ada Perangkat Yang Terhubung */
+
+    width: auto;
+    height: 56px;
+
+    /* Brand/H1/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-feature-settings: 'liga' off;
+
+    color: #001A41;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.no-device-submessage {
+    font-family: 'Telkomsel Batik Sans';
+    font-size: 14px;
+    color: #6C757D;
+
+    /* Tambah untuk pantau perangkat pintarmu */
+
+    width: auto;
+    height: auto;
+
+    /* System/Body 2/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    color: #576775;
+
+}
+
+.add-device-button {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+
+    /* System/Body 1/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+
+    /* Text/White */
+    color: #FFFFFF;
+
+    /* Content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 4px;
+
+    width: auto;
+    height: 48px;
+
+    /* Background/Solids/Red */
+    background: #ED0226;
+    border: none;
+    border-radius: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.add-device-button:hover {
+    background-color: #CC0000;
+}
+
+.whole-header {
+    position: absolute;
+    width: 100%;
+    height: 369px;
+    left: 0px;
+    top: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    position: absolute;
+    width: auto;
+    height: 22px;
+    left: 16px;
+    top: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.text2 {
+    position: absolute;
+    width: auto;
+    height: 28px;
+    left: 16px;
+    top: 38px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.question-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 280px;
+    top: 28px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.notification-icon {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 320px;
+    top: 24px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.button-container-home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+    /* Add some margin to separate it from the next content */
+}
+
+/* Styling for the dual button */
+.dual-button-home {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+/* Styling for each half (left and right) */
+.icon-container-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 24px;
+    background-color: white;
+    border: 1px solid #DAE0E9;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Icon size and default color */
+.icon-toggle-home {
+    font-size: 16px;
+    color: #072a5a;
+    /* Default blue icon */
+}
+
+/* Active state: blue background and white icon */
+.icon-container-home.active {
+    background-color: #072a5a;
+    /* Blue background when active */
+}
+
+.icon-container-home.active .icon-toggle-home {
+    color: white;
+    /* White icon when active */
+}
+
+/* Non-active state: white background and blue icon */
+.icon-container-home:not(.active) .icon-toggle-home {
+    color: #072a5a;
+    /* Blue icon */
+}
+
+.content-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    padding: 0 16px;
+    /* Adds 16px padding to the left and right */
+    box-sizing: border-box;
+    background-color: transparent;
+    /* Your previous background color */
+    border-radius: 16px;
+}

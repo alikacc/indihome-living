@@ -1,0 +1,344 @@
+/* Dim the entire page when the carousel is expanded */
+.dimmed {
+    opacity: 0.5;
+    /* Set opacity to 50% for the rest of the page */
+    pointer-events: none;
+}
+
+/* Add a dimmed background overlay for the rest of the page */
+.dimmed-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 2;
+    /* Ensure it appears below the carousel but above the page content */
+    pointer-events: none;
+    /* Prevent interaction with the background */
+}
+
+/* Carousel styles */
+.carousel {
+    pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 24px;
+    gap: 16px;
+    position: absolute;
+    height: 432px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px;
+    background: #EFF1F4;
+    backdrop-filter: blur(12px);
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+    touch-action: none;
+    transition: bottom 0.3s ease;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.carousel.expanded {
+    bottom: 0;
+    /* Bring carousel to the top when expanded */
+}
+
+/* Drag indicator styles */
+.drag-indicator {
+    width: 44px;
+    height: 3px;
+    background: #9CA9B9;
+    border-radius: 30px;
+    cursor: pointer;
+    /* Make it clear the user can drag this */
+}
+
+/* Product card and other styles remain unchanged */
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 0px;
+    gap: 16px;
+
+    width: 100%;
+    /* Make the width responsive */
+    max-width: 328px;
+    height: 308px;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+    height: 256px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.recommendation-textframe {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 100%;
+    /* Make the width responsive */
+    max-width: 296px;
+    height: 20px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.recommendation-text {
+    width: 100%;
+    /* Make the width responsive */
+    max-width: 296px;
+    height: 20px;
+
+    font-family: 'Telkomsel Batik Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #181C21;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 45%;
+    /* Adjust the width to be responsive */
+    max-width: 156px;
+    /* Set a max-width to maintain consistent size on larger screens */
+    height: 256px;
+    flex: none;
+    scroll-snap-align: start;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card:hover {
+    background-color: #f0f0f0;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border-radius: 4px 16px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 156px;
+    height: 92px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+
+    width: 100%;
+    max-width: 156px;
+    height: 48px;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.product-name {
+    width: 100%;
+    max-width: 156px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #181C21;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.product-description {
+    width: 100%;
+    max-width: 156px;
+    height: 24px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+
+    color: #181C21;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.product-price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+
+    width: 100%;
+    max-width: 156px;
+    height: 36px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.price-label {
+    width: 100%;
+    max-width: 156px;
+    height: 12px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+
+    color: #757F90;
+
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.price-value {
+    width: 100%;
+    max-width: 156px;
+    height: 22px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+
+    color: #ED0226;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+/* Dim the entire page when carousel is expanded */
+.lcarousel.dimmed {
+    opacity: 0.5;
+    /* Set the opacity of the background content to 50% */
+    pointer-events: none;
+    /* Prevent interaction with background */
+}
+
+/* Reset pointer events inside carousel so that it remains interactive */
+.carousel {
+    pointer-events: auto;
+}
+
+/* Signup overlay to cover the entire screen */
+.carousel-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* High z-index to appear above the rest of the content */
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .carousel {
+        max-width: 720px;
+    }
+
+    .product-card {
+        width: 22.5%;
+        /* Adjust the width to fit more cards on larger screens */
+    }
+
+    .recommendation {
+        gap: 24px;
+        /* Increase gap between cards on larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .carousel {
+        max-width: 960px;
+    }
+
+    .product-card {
+        width: 20%;
+        /* Adjust the width to fit more cards on larger screens */
+    }
+}

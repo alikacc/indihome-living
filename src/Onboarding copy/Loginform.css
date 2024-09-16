@@ -1,0 +1,419 @@
+.login-container {
+    /* tab_login */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+    position: absolute;
+    width: 328px;
+    height: 200px;
+    left: 16px;
+    top: 430px;
+
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), rgba(239, 241, 244, 0.5);
+    backdrop-filter: blur(12px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.drag-indicator {
+    width: 44px;
+    height: 3px;
+    background: #9CA9B9;
+    border-radius: 30px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.login-container1 {
+    /* Frame 1000002201 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    /* Re-enable the gap */
+
+    width: 296px;
+    height: auto;
+    /* Remove fixed height */
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+
+.login-instruction {
+    z-index: 2;
+    /* Title Text */
+    height: 12px;
+
+    /* System/Small/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+
+    /* Text/Secondary */
+    color: #757F90;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.email-input {
+    /* package */
+    z-index: 2;
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 16px;
+    gap: 12px;
+
+    width: 296px;
+    height: 44px;
+
+    /* Background/Solids/White */
+    background: #FFFFFF;
+    /* Stroke/Grey */
+    border: 1px solid #DAE0E9;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.login-button {
+    z-index: 2;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+
+    /* Remove gap inside button to avoid spacing issues */
+    gap: 0;
+
+    box-sizing: border-box;
+    width: 296px;
+    height: 48px;
+
+    background: #ED0226;
+    border: none;
+    border-radius: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    /* Ensure it comes after the input box */
+    flex-grow: 0;
+}
+
+.login-button .login-button-text {
+    /* Text */
+    z-index: 2;
+
+    width: 51px;
+    /* System/Body 1/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+
+    /* Text/White */
+    color: #FFFFFF;
+    /* Ensure text is white */
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.signup {
+    /* Frame 1321315888 */
+    z-index: 2;
+
+    /* Auto layout */
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    width: 161px;
+    height: 18px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.signup-link {
+    /* Belum punya akun? */
+    height: 18px;
+    z-index: 2;
+
+    /* System/Small/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+
+    color: #181C21;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.signup-link span {
+    /* Daftar */
+
+    z-index: 2;
+    width: 39px;
+    height: 18px;
+
+    /* System/Small/SemiBold */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+
+    color: #FF0025;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+/* Dimmed effect when signup is shown */
+.login-container.dimmed {
+    opacity: 0.5;
+    /* Set the opacity of the background content to 50% */
+    pointer-events: none;
+    /* Prevent interaction with background */
+}
+
+/* Signup overlay to cover the entire screen */
+.signup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for 50% opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* High z-index to appear above the rest of the content */
+}
+
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 24px;
+    gap: 16px;
+
+    position: fixed;
+    height: 272px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+    /* Make the width responsive */
+    max-width: 600px;
+    bottom: 0px;
+    /* Optional: set a max width to keep it from being too wide on large screens */
+
+    background: #ffffff;
+    backdrop-filter: blur(12px);
+    border-radius: 20px 20px 0px 0px;
+
+    overflow: hidden;
+    touch-action: none;
+    transition: bottom 0.3s ease;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.signup-title {
+    /* Frame 1000001091 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+    width: 328px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    /* System/Body 1/SemiBold */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    color: #001A41;
+}
+
+
+.signup-button {
+    /* ButtonGeneral */
+    border: none;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    gap: 4px;
+
+    width: 328px;
+    min-width: 140px;
+    max-width: 328px;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+
+    background: #DAE0E9;
+    border-radius: 40px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.signup-email-input {
+    /* package */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 13px 16px;
+    gap: 12px;
+
+    width: 328px;
+    height: 44px;
+
+    /* Background/Solids/White */
+    background: #FFFFFF;
+    /* Stroke/Grey */
+    border: 1px solid #DAE0E9;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+    /* System/Small/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* Text/Disabled */
+    color: #9CA9B9;
+}
+
+.signup-button-text {
+    /* Text */
+
+    width: 95px;
+    height: 24px;
+
+    /* System/Body 1/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* Default inactive button (greyed out) */
+.signup-button.inactive {
+    background-color: #cccccc;
+    /* Grey */
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+/* Active button when email is valid (red) */
+.signup-button.active {
+    background-color: #ED0226;
+    /* Red */
+    color: #ffffff;
+    cursor: pointer;
+}

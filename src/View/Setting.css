@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-setting {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.top-header-setting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.top-navigation-setting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+}
+
+.navigation-title-setting {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #181C21;
+}
+
+.nav-icon-all {
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.page-title-setting {
+    font-size: 16px;
+    font-weight: 500;
+    color: #001A41;
+}
+
+.settings-list {
+    width: 100%;
+    background-color: transparent;
+    margin-top: 16px;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #E0E0E0;
+    cursor: pointer;
+}
+
+.settings-icon {
+    color: #001A41;
+    margin-right: 16px;
+}
+
+.settings-text {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #001A41;
+}
+
+.settings-arrow {
+    color: #001A41;
+}

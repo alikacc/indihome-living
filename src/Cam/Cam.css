@@ -1,0 +1,785 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    /* Fixed height */
+    width: 360px;
+    /* Fixed width */
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Radar animation */
+.radar-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.radar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Outer circle white with 60% opacity */
+    position: relative;
+    overflow: hidden;
+}
+
+.radar-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.radar-pointer {
+    width: 50%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    border-radius: 50%;
+    top: 25%;
+    left: 25%;
+    animation: spin-pointer 3s linear infinite;
+}
+
+@keyframes spin-pointer {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Wi-Fi input page */
+.wifi-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.wifi-options {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.disabled-button {
+    background-color: lightgray;
+    color: darkgray;
+    cursor: not-allowed;
+}
+
+.enabled-button {
+    background-color: #ff3d3d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Loading page */
+.loading-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-circle {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ff3d3d;
+    border-top: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Device detail page */
+.device-detail-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.wifi-select {
+    width: 40vh;
+    height: 50px;
+    /* Set the same height */
+    padding: 10px;
+    margin: 10px 0;
+    /* Uniform margin */
+    font-size: 16px;
+    border: 1px solid #DAE0E9;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    /* Set white background */
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.password-container {
+    width: 38.8vh;
+    height: 50px;
+    /* Set the same height */
+    padding: 8.5px;
+    margin: 10px 0;
+    /* Uniform margin */
+    font-size: 16px;
+    border: 1px solid #DAE0E9;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    /* Set white background */
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/* Success page */
+.success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 45%, #EFF1F4 50%), url('../assets/merahputih.png') no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+.success-page h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #181C21;
+    font-size: 20px;
+    /* Set to 20px */
+    margin: 10px 0;
+    /* Adjust spacing */
+}
+
+.success-page p {
+    font-family: 'Poppins', sans-serif;
+    color: #757F90;
+    font-size: 14px;
+    /* Set to 14px */
+    margin: 5px 0;
+    /* Adjust spacing */
+}
+
+.device-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.device-image2 {
+    width: 246px;
+    /* Set width to 246px */
+    height: 269px;
+    /* Set height to 269px */
+    margin-bottom: 10px;
+    /* Adjust margin if needed */
+}
+
+.tambah-perangkat-frame {
+    /* Frame 1321314629 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0px 16px;
+    gap: 8px;
+
+    position: absolute;
+    width: 360px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+
+}
+
+.tambah-perangkat-header {
+    /* title */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 248px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    /* System/Body 1/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    text-align: center;
+
+    color: #181C21;
+    box-sizing: border-box;
+
+}
+
+
+.radar-container {
+    position: relative;
+    width: 240px;
+    /* Adjust to the largest circle size */
+    height: 240px;
+}
+
+.outer-circle {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: rgba(250, 204, 211, 0.4);
+    position: relative;
+}
+
+
+.middle-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #FF0025;
+    position: absolute;
+    top: 20px;
+    /* Adjusted to center */
+    left: 20px;
+}
+
+/* Inner circle */
+.inner-circle {
+    width: 114px;
+    /* Center circle size */
+    height: 114px;
+    border-radius: 50%;
+    background-color: #C60C27;
+    position: absolute;
+    top: 43px;
+    /* Adjusted to center */
+    left: 43px;
+}
+
+.center-number {
+    position: absolute;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Radar text */
+.radar-text {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.radar-overlay {
+    width: 160px;
+    height: 160px;
+    background-color: red;
+    /* Basic red */
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.radar-sweep {
+    width: 240px;
+    /* Adjust the width */
+    height: 240px;
+    /* Adjust the height */
+    background: conic-gradient(from 0deg,
+            rgba(255, 255, 255, 0.8) 0deg,
+            rgba(255, 255, 255, 0.0) 60deg);
+    border-radius: 50%;
+    position: absolute;
+    top: -55%;
+    /* Adjust position */
+    left: -55%;
+    /* Adjust position */
+    animation: radar-spin 2s linear infinite;
+}
+
+@keyframes radar-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Timer at the center */
+.center-number {
+    position: absolute;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.radar-text {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wifi-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.wifi-options {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.enabled-button {
+    background-color: #ff3d3d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Top bar */
+.top-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Use relative to allow absolute positioning of the back button */
+    width: 360px;
+    padding: 16px 0;
+    /* Padding to position the bar at the top */
+}
+
+.back-button {
+    position: absolute;
+    left: 0px;
+    /* Align to the left */
+    top: 10%;
+    transform: translateY(-50%);
+    /* Center vertically */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.top-bar-title {
+    flex: 1;
+    text-align: center;
+    /* Center the title text */
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.progress-circles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 330px;
+    /* Add spacing between elements */
+}
+
+.circle {
+    width: 29px;
+    /* Adjusted width */
+    height: 24px;
+    /* Adjusted height */
+    border-radius: 50%;
+    border: 2px solid #BFC9D0;
+    color: #BFC9D0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.circle.active {
+    border-color: #FF0025;
+    color: #FF0025;
+}
+
+.line {
+    width: 108px;
+    height: 3px;
+    background-color: #B1B5C3;
+}
+
+.line-done {
+    width: 108px;
+    height: 3px;
+    background-color: #FF0025;
+}
+
+.webcam-image {
+    width: 360px;
+    height: 360px;
+}
+
+.instruction-box {
+    width: 298px;
+    height: 230px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction-text {
+    color: #001A41;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 100px;
+    align-items: left;
+    justify-content: left;
+}
+
+/* Checkbox Container */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.checkbox-container2 {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+
+}
+
+.checkbox-container input {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #B1B5C3;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-container input:checked::before {
+    content: "✔";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.checkbox-container input:checked {
+    background-color: #001A41;
+    border: none;
+}
+
+
+.selanjutnya-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #DAE0E9;
+    color: #9CA9B9;
+    font-family: 'Poppins';
+}
+
+.selanjutnya-button.active {
+    background-color: #ED0226;
+    color: white;
+}
+
+.selanjutnya-button:disabled {
+    cursor: not-allowed;
+}
+
+.indicator-warning {
+    margin-top: 10px;
+    color: #FF0025;
+    font-weight: 1000;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 112px;
+    background: #FFFFFF;
+    padding: 0px 0px 16px;
+    gap: 8px;
+
+}
+
+
+.password-container input {
+    font-family: 'poppins';
+    border-radius: 8px;
+    border: 1px solid #DAE0E9;
+
+}
+
+/* Page 3 specific styles */
+.wifi-setup-box {
+    width: 328px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wifi-icon {
+    width: 296px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.webcam-icon {
+    width: 128px;
+    height: 128px;
+    margin-bottom: 20px;
+}
+
+.password-container {
+    position: relative;
+
+}
+
+.eye-button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(30%, -100%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.eye-button:focus {
+    outline: none;
+}
+
+.instruction-text {
+    color: #001A41;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sub-instruction-text {
+    color: #6B7280;
+    font-family: 'Poppins';
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #B1B5C3;
+    border-radius: 5px;
+}
+
+/* Progress circles specific to page 3 */
+.progress-circles .check {
+    background-color: #FF0025;
+    color: white;
+    border: 2px solid #FF0025;
+    font-size: 16px;
+}
+
+.progress-circles .line:first-child {
+    background-color: #FF0025;
+    /* Make the first line red */
+}
+
+.camera-setup-page {
+    top: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.wifi-setup-box {
+
+    text-align: left;
+    /* Ensures content aligns to the left within the box */
+}
+
+.wifi-select select {
+    width: calc(100% - 20px);
+    /* Adjust width considering padding */
+    padding: 10px;
+    border: none;
+    /* Remove the border since it's handled by the container */
+    outline: none;
+    background: transparent;
+    appearance: none;
+    /* Remove default dropdown icon */
+}
+
+.password-container input {
+    width: calc(100% - 50px);
+    /* Adjust width considering padding */
+    padding: 10px;
+    border: none;
+    /* Remove the border since it's handled by the container */
+    outline: none;
+    background: transparent;
+    transform: translate(-2%, -39%);
+}
+
+
+
+/* Success page */
+.success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.device-image {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.ke-beranda-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 100px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #ff3d3d;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.ke-beranda-button:hover {
+    background-color: #ff3d3d;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ensure other page elements are styled correctly */
+.selanjutnya-button.active {
+    background-color: #ED0226;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}

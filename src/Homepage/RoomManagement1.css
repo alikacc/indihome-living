@@ -1,0 +1,402 @@
+.roommanagement1-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFF1F4;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+}
+
+.top-headers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.top-navigations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+}
+
+.navigation-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #181C21;
+}
+
+.nav-icon-all {
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.icon-delete {
+    width: 24px;
+    height: 24px;
+    background-image: black;
+    /* Replace with the actual delete icon */
+    background-size: cover;
+    cursor: pointer;
+}
+
+.detail-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 16px;
+    background: rgba(239, 241, 244, 0.7);
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+
+    /* Frame 1321314632 */
+
+    box-sizing: border-box;
+
+
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 12px;
+    gap: 16px;
+
+    width: auto;
+    height: 64px;
+
+    background: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.info-box:last-child {
+    border-bottom: none;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    font-size: 14px;
+    color: #666;
+}
+
+.info-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.info-arrow {
+    /* Content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+
+    width: 16px;
+    height: 16px;
+
+    border-radius: 40px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    flex-grow: 0;
+
+}
+
+.member-section {
+
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    margin: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    gap: 16px;
+
+    background: rgba(239, 241, 244, 0.7);
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+
+}
+
+.member-title {
+    /* Frame 1321314634 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 248px;
+    height: 24px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-bottom: 16px;
+    /* Anggota yang Memiliki Akses */
+
+    /* Brand/Body 1/Bold */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    color: #181C21;
+
+}
+
+.member {
+    /* list */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px;
+    gap: 16px;
+
+    width: auto;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 12px;
+
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.member-container {
+    /* Container */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 272px;
+    height: 40px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.avatar-placeholder {
+    /* Avatar / profile_placeholder */
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 60px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.member-name {
+    /* content */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 2px;
+
+    width: 200px;
+    height: 22px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 1;
+
+}
+
+.role {
+    color: green;
+    font-weight: bold;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.add-member {
+    /* ButtonGeneral */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 296px;
+    max-width: 328px;
+    height: 22px;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    align-self: stretch;
+    flex-grow: 0;
+    /* Text */
+    /* System/Body 2/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+    text-align: center;
+
+    /* Text/Red */
+    color: #ED0226;
+    background-color: transparent;
+    border: none;
+}
+
+.bottom-sheet-location {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 3;
+    /* Ensure it's above the overlay */
+}
+
+.bottom-sheet-location-handle {
+    width: 40px;
+    height: 4px;
+    background: #D3D3D3;
+    border-radius: 2px;
+    margin: 0 auto 16px;
+}
+
+.sheet-header {
+    width: 100%;
+    /* Make the header full width */
+    padding: 16px 0;
+    /* Adjust padding for top and bottom */
+    border-radius: 16px 16px 0px 0px;
+    text-align: LEFT;
+    margin-bottom: 16px;
+}
+
+.location-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    /* Adjust text color for contrast */
+}
+
+.input-location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.input-box {
+    box-sizing: border-box;
+    padding: 13px 16px;
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    border: 1px solid #DAE0E9;
+    border-radius: 12px;
+}
+
+.simpan-location-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    width: 100%;
+    background: #ED0226;
+    border: none;
+    border-radius: 40px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.simpan-location-button:hover {
+    background-color: darkred;
+}

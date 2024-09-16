@@ -1,0 +1,465 @@
+.details-wrapper {
+    position: relative;
+}
+
+.details-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFF1F4;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.details-container.dimmed {
+    opacity: 0.5;
+    /* Lower the opacity to dim */
+}
+
+.overlay-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    /* Place it just below the bottom sheet */
+    pointer-events: auto;
+}
+
+.top-headers-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 16px;
+    width: 100%;
+    height: 158px;
+    left: 0px;
+    top: 0px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+.top-navigations-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    height: 56px;
+    justify-content: center;
+    position: relative;
+}
+
+.navigation-title {
+    width: 178px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #181C21;
+}
+
+.nav-icon-all {
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown-all {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 16px;
+    gap: 8px;
+    width: auto;
+    height: 70px;
+}
+
+.dropdown-box {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* Ensure space between text and arrow */
+    padding: 0px 16px;
+    gap: 12px;
+    width: 183px;
+    height: 44px;
+    background: #FFFFFF;
+    border: 1px solid #DAE0E9;
+    border-radius: 12px;
+}
+
+.dropdown-arrow {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    /* Prevent the arrow from shrinking */
+}
+
+
+.location-dropdown {
+    position: absolute;
+    top: 160px;
+    /* Set this to the height of the triggering element */
+    left: 16px;
+    /* Align the dropdown to the left edge of the triggering element */
+    width: 183px;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.location-item {
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.device-list-detail {
+    width: calc(100% - 32px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    position: absolute;
+    box-sizing: border-box;
+    height: auto;
+    left: 16px;
+    top: 182px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.device-category-detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.device-icon-detail {
+    width: 24px;
+    height: 24px;
+}
+
+.device-item-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 16px;
+    gap: 16px;
+    width: 100%;
+    height: 50px;
+    background: rgba(239, 241, 244, 0.7);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #181C21;
+}
+
+.details {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.detail-info-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.detail-item-detail {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.detail-value-detail {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.detail-links-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border: none;
+    background-color: transparent;
+    color: #ED0226;
+    line-height: normal;
+    font-size: 12px;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.detailcon {
+    display: flex;
+}
+
+.detailtxt {
+    font-size: '12px';
+        color: 'red';
+        font-weight: 400;
+        padding-right: '12px';
+}
+
+.add-device-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 4px;
+    width: 100%;
+    height: 48px;
+    background: #ED0226;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.add-device-detail:hover {
+    background-color: darkred;
+}
+
+.device-item-detail.selected {
+    background: #D3D3D3;
+}
+
+.bottom-sheet-atur,
+.bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 3;
+    /* Ensure it's above the overlay */
+}
+
+.bottom-sheet-atur-handle,
+.bottom-sheet-handle,
+.bottom-sheet-name-handle {
+    width: 40px;
+    height: 4px;
+    background: #D3D3D3;
+    border-radius: 2px;
+    margin: 0 auto 16px;
+}
+
+.bottom-sheet-atur ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bottom-sheet-atur ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #EFEFEF;
+    cursor: pointer;
+}
+
+.bottom-sheet-atur ul li:last-child {
+    border-bottom: none;
+}
+
+.bottom-sheet-content {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.bottom-sheet-name-content,
+.bottom-sheet-room-content {
+    text-align: left;
+}
+
+.camera-ubahname-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    /* Frame 1000001136 */
+
+    width: 120px;
+    height: 120px;
+
+    background: linear-gradient(359.74deg, #F9FAFB 0.22%, #FEE6E6 99.78%);
+    border-radius: 0px 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.live-camera-btn,
+.configure-device-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ED0226;
+    color: white;
+    margin-bottom: 8px;
+}
+
+
+.configure-device-btn {
+    background-color: transparent;
+    color: #ED0226;
+    border: 1px solid #ED0226;
+}
+
+/* Bottom sheet for changing the device name */
+.bottom-sheet-ubah-name {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.device-name-input {
+    width: auto;
+    padding: 12px;
+    border: 1px solid #DAE0E9;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.ubah-button-detail {
+    width: 100%;
+    padding: 12px;
+    background-color: #ED0226;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ubah-button-detail:hover {
+    background-color: darkred;
+}
+
+/* Bottom sheet for selecting a room */
+.bottom-sheet-select-room {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+.room-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.room-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.room-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.room-radio {
+    justify-content: right;
+    margin-right: 0;
+}

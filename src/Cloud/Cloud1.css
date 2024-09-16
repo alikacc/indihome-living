@@ -1,0 +1,301 @@
+/* AIPage.css */
+
+.ai-page-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFF1F4;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.ai-decor {
+    /* BackgroundDashboard */
+
+    position: absolute;
+    height: 436px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+
+    opacity: 0.85;
+
+}
+
+.ai-header {
+    /* Frame 1321314642 */
+
+    position: absolute;
+    width: 360px;
+    height: 242px;
+    left: calc(50% - 360px/2);
+    top: 0px;
+
+
+}
+
+.ai-title {
+    /* Frame 1321314641 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 4px;
+
+    position: absolute;
+    width: 328px;
+    height: 108px;
+    left: 16px;
+    top: 266px;
+
+
+}
+
+.ai-title-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.ai-title-sub {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.ai-features-container {
+    /* Frame 1321314625 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+
+    position: absolute;
+    width: 328px;
+    height: 246px;
+    left: calc(50% - 328px/2);
+    top: 402px;
+
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+
+}
+
+.ai-features-container-title {
+    /* Frame 1321314626 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    color: #181C21;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.ai-feature-card {
+    /* product-card */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 0px 8px;
+    gap: 8px;
+
+    width: 140px;
+    height: 174px;
+
+    background: #EFF1F4;
+    border-radius: 12px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+}
+
+.ai-feature-image {
+    /* image 1919 */
+
+    width: 140px;
+    height: 104px;
+    border-radius: 8px 8px 0px 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.ai-feature-description {
+    /* Frame 1000002038 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 8px;
+    gap: 8px;
+
+    width: 140px;
+    height: auto;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.ai-feature-description h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.ai-feature-description p {
+    font-size: 14px;
+    color: #757F90;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #DAE0E9;
+}
+
+.navbar-item {
+    font-size: 14px;
+    color: #757F90;
+    text-align: center;
+}
+
+.navbar-item.active {
+    color: #181C21;
+}
+
+.navbar-button {
+    width: 50px;
+    height: 50px;
+    background-color: #FF4D4F;
+    border-radius: 50%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    /* To position it above the navbar */
+}
+
+.ai-feature-title {
+    /* Elderly Care */
+
+    width: 124px;
+    height: 18px;
+
+    /* System/Small/SemiBold */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+
+    /* Text/Primary */
+    color: #181C21;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.ai-feature-sub {
+    /* Daily record of elderly life */
+
+    width: 124px;
+    height: 36px;
+
+    /* System/Small/Regular */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+    display: flex;
+    align-items: center;
+
+    /* Text/Secondary */
+    color: #757F90;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}

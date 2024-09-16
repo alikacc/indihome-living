@@ -1,0 +1,88 @@
+.undangan-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFF1F4;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon-left {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.icon-left-img {
+    width: 24px;
+    height: 24px;
+}
+
+.large-submit {
+    margin-top: 40px;
+}
+
+.envelope-icon {
+    width: 128px;
+    height: 128px;
+}
+
+.verification-title {
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #181C21;
+}
+
+.verification-text {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 22px;
+    color: #757F90;
+}
+
+.resend-button {
+    margin-top: 32px;
+    width: 328px;
+    height: 48px;
+    background-color: #DAE0E9;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9CA9B9;
+    cursor: not-allowed;
+}
+
+.resend-button:enabled {
+    background-color: #ED0226;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Style for the disabled (counting) state of the button */
+.disabled-button {
+    background-color: #D3D3D3;
+    /* Grey background */
+    color: #9CA9B9;
+    /* Grey text */
+    cursor: not-allowed;
+    /* Change cursor to indicate disabled state */
+}
+
+/* Style for the redirect button */
+.redirect-button {
+    background-color: #ED0226;
+    /* Red background */
+    color: #FFFFFF;
+    /* White text */
+    cursor: pointer;
+    /* Change cursor to pointer */
+}

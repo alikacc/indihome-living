@@ -1,0 +1,60 @@
+.floatingbox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+
+    position: absolute;
+    width: 328px;
+    min-height: 134px;
+    /* Adjusted to fit the new content */
+    left: calc(50% - 328px/2 - 0.5px);
+    top: 0px;
+
+    background: #FFFFFF;
+    box-sizing: border-box;
+
+    box-shadow: 0px 2px 4px 1px rgba(157, 156, 182, 0.2);
+    border-radius: 16px;
+    z-index: 2;
+}
+
+.location-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.location-select {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.location-dropdown {
+    display: none;
+    position: absolute;
+    top: 60px;
+    /* Adjust position based on the parent element */
+    left: 16px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 3;
+}
+
+.location-dropdown.active {
+    display: block;
+}
+
+.location-item {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.location-item:hover {
+    background-color: #f0f0f0;
+}

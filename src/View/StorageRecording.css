@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-storagesetting {
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.top-header-storagesetting {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.top-navigation-storagesetting {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+}
+
+.navigation-title-storagesetting {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #181C21;
+}
+
+.nav-icon-all {
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #E0E0E0;
+    margin-top: 16px;
+}
+
+.tab-item {
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+    flex-grow: 1;
+    color: #7D7D7D;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.tab-item.active {
+    color: #001A41;
+    border-bottom: 2px solid #001A41;
+}
+
+.tab-content {
+    padding: 16px;
+}
+
+.recording-mode {
+    margin-bottom: 16px;
+}
+
+.recording-mode span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #001A41;
+}
+
+.recording-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.recording-option input {
+    margin-right: 8px;
+}
+
+.storage-details {
+    background-color: #F9F9F9;
+    padding: 16px;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.storage-details span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.storage-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.storage-bar .used {
+    width: 30%;
+    height: 8px;
+    background-color: #FF3B30;
+    border-radius: 4px 0 0 4px;
+}
+
+.storage-bar .free {
+    width: 70%;
+    height: 8px;
+    background-color: #34C759;
+    border-radius: 0 4px 4px 0;
+}
+
+.storage-details div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.format-button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: #FF3B30;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.format-button:hover {
+    background-color: #D32F2F;
+}

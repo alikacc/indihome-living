@@ -1,0 +1,334 @@
+/* UserDetail.css */
+
+.user-detail-container-memdetail {
+    width: 100%;
+    height: 100vh;
+    background-color: #EFF1F4;
+    font-family: 'Poppins';
+    padding: 0px;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* Header */
+.user-detail-header-memdetail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+    height: 56px;
+    justify-content: center;
+    position: relative;
+}
+
+.back-icon-memdetail {
+    position: absolute;
+    left: 16px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.trash-icon-memdetail {
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    right: 48px;
+}
+
+.header-title-memdetail {
+    width: 178px;
+    height: 24px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #181C21;
+}
+
+/* Profile Section */
+.profile-section-memdetail {
+    /* Frame 1321314637 */
+
+    box-sizing: border-box;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    position: absolute;
+    width: 328px;
+    height: 146px;
+    left: calc(50% - 328px/2);
+    top: 72px;
+
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+
+}
+
+.profile-picture-memdetail {
+    /* Avatar / profile_placeholder */
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 96px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.profile-name-status {
+    /* Frame 1321314636 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.profile-name-memdetail {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+    text-align: center;
+
+    color: #181C21;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.profile-status-memdetail {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height, or 150% */
+    text-align: center;
+
+    color: #757F90;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+.profile-status-memdetail span {
+    color: #181C21;
+    font-weight: normal;
+}
+
+/* Devices List */
+.devices-list-memdetail {
+    /* Frame 1321315903 */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+
+    position: absolute;
+    width: 328px;
+    height: auto;
+    left: calc(50% - 328px/2);
+    top: 242px;
+
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.device-item-memdetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    gap: 16px;
+
+    width: 296px;
+    height: 66px;
+
+    /* Background/Solids/White */
+    background: #FFFFFF;
+    backdrop-filter: blur(12px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 16px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+.device-item-memdetail:last-child {
+    border-bottom: none;
+}
+
+.device-info-memdetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.device-name-memdetail {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.device-status-memdetail {
+    font-size: 12px;
+    color: #FFA500;
+    /* Yellow */
+}
+
+.device-status-memdetail.blue {
+    color: #1E90FF;
+    /* Blue */
+}
+
+.edit-option-memdetail {
+    font-size: 14px;
+    color: #FF6347;
+    /* Tomato */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon-memdetail {
+    margin-left: 4px;
+}
+
+/* Add Device Button */
+.add-device-memdetail {
+    color: #FF6347;
+    /* Tomato */
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 16px;
+}
+
+.add-member-user-memdetail {
+    /* ButtonGeneral */
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 5;
+    align-self: stretch;
+    flex-grow: 0;
+    color: red;
+    font-family: 'Poppins';
+    background-color: transparent;
+    border: none;
+    margin-top: -10px;
+}
+
+/* BOTTOM SHEET */
+/* DetailAnggota.css */
+/* DetailAnggota.css */
+
+/* Other existing styles... */
+
+/* Bottom Sheet */
+.bottom-sheet-memdetail {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 16px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    z-index: 100;
+    /* Ensure the bottom sheet appears on top */
+}
+
+.device-item-expanded-memdetail {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #D3D3D3;
+    padding-bottom: 12px;
+}
+
+.access-rights-memdetail {
+    margin-top: 8px;
+    padding-left: 24px;
+}
+
+.access-rights-memdetail div {
+    margin-top: 8px;
+}
+
+.access-rights-memdetail label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-left: 8px;
+}
+
+.next-button-memdetail {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ED0226;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.next-button-memdetail.disabled {
+    background-color: #D3D3D3;
+    cursor: not-allowed;
+}
