@@ -70,12 +70,12 @@ const Cam = () => {
     };
 
     const handleGoToHome = () => {
-        window.location.href = "http://localhost:3000"; // Redirect to localhost
+        navigate('/home');
     };
 
     return (
         <div className="container" style={{ backgroundImage: `url(${getBackgroundImage()})` }}>
-            
+
             {currentPage === 1 && (
                 <div className="radar-page">
                     {/* <div className="top-bar">

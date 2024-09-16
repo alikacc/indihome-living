@@ -39,8 +39,8 @@ const Navbar = () => {
                         <div className="nav-item-text">Shop</div>
                     </div>
                 </div>
-                <div className="float-btn">
-                    <img src={require('./assets/NavBar - Floating Button.png')} alt="Floating Button Icon" onClick={handleCamClick} />
+                <div className="float-btn" onClick={handleCamClick}>
+                    <img src={require('./assets/NavBar - Floating Button.png')} alt="Floating Button Icon" />
                 </div>
                 <div className="nav-group">
                     <div className="nav-item" onClick={handleCloudClick}>
