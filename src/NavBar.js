@@ -20,6 +20,12 @@ const Navbar = () => {
     const handleCloudClick = () => {
         navigate('/cloud');
     };
+
+    const handleShopClick = () => {
+        // Redirect to an external URL
+        window.location.href = 'https://tsel-smarthome.vercel.app/';
+    };
+
     return (
         <div className="navbar">
             <div className="navbar-tab">
@@ -28,7 +34,7 @@ const Navbar = () => {
                         <img src={require('./assets/NavBar - Home.png')} alt="Home Icon" />
                         <div className="nav-item-text">Home</div>
                     </div>
-                    <div className="nav-item">
+                    <div className="nav-item" onClick={handleShopClick}>
                         <img src={require('./assets/NavBar - Shopping Bag.png')} alt="Shopping Bag Icon" />
                         <div className="nav-item-text">Shop</div>
                     </div>
@@ -47,7 +53,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 

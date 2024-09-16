@@ -18,14 +18,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Onboarding />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/cam" element={<Cam />} />
+        {/* <Route path="/cam" element={<Cam />} />
         <Route path="/home1" element={<Coba />} />
         <Route path="/view" element={<View />} />
         <Route path="/deet" element={<Deet />} />
-        <Route path="/home2" element={<Coba1 />} />
-        <Route path="/setting" element={<Setting />} />
+        <Route path="/home2" element={<Coba1 />} /> */}
+        {/* <Route path="/setting" element={<Setting />} /> */}
         <Route path="/profile" element={<Profile />} />
-        <Route path="/detailang" element={<DetailAnggota />} />
+        {/* <Route path="/detailang" element={<DetailAnggota />} /> */}
         <Route path="/cloud" element={<Cloud />} />
       </Routes>
     </Router>
